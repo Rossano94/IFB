@@ -1,0 +1,192 @@
+x@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 130px;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "nav footer footer";
+}
+
+body.hide-sidebar{
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+}
+
+header.header{
+    grid-area: header;
+    background-color:  #05143f;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header.header .menu-toggle {
+    color: white;
+    cursor: pointer;
+    width: 30px;
+}
+
+h1 a{
+    font-size: 3rem;
+    font-family: 'Shippori Mincho', serif;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav.nav{
+    grid-area: nav;
+    background-color: #162e58;
+    /*padding: 10px;*/
+}
+
+ul{
+    text-align: none;
+}
+
+ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ul li a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+}
+/*class dos links do nav*/
+.nav-link:visited{
+    color: white;
+}
+
+.nav-link:hover{
+    text-shadow: 0.4px 0.4px white;
+}
+
+.nav-icon{
+    width: 35px;
+}
+
+main.main{
+    grid-area: main;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+/*class dos links do main*/
+.main-link:visited{
+    color: black;
+}
+
+.main-link:hover{
+    text-shadow: 0.5px 0.5px black;
+}
+
+.main-link{
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.main-item{
+    width: 220px;
+    height: 220px;
+    margin: 50px;
+    background-color: #dce4e7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.main-icon{
+    height: 130px;
+}
+
+#simbolo{
+    width: 150px;
+    height: 150px;
+    position: fixed; /*Posicionamento fixo não importando o tamanho da tela*/
+    bottom: 50px;
+    right: 150px;
+}
+
+aside.aside{
+    grid-area: aside;
+    background-color: #dadada;
+    background-image: url("img/aside1.jpg");
+    background-size: 100%; 
+    /* padding: 5px; */
+}
+
+body.hide-sidebar nav.nav {
+    display: none;
+}
+
+footer.footer{
+    font-size: 1.1rem;
+    grid-area: footer;
+    background-color: #05143f;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:  20px;
+}
+
+div.linha{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+
+}
+
+.linha{
+    justify-content: center;
+}
+
+.jogador{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-color: #dce4e7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* div.zagueiro{
+    width: 50px;
+} */
