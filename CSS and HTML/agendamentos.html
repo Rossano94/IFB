@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HAHAHA</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rossano Alves Lima Júnior"/>
+		<meta name="keywords" content="Joker, Coringa, HQ, DC, Comics"/>
+		<meta name="discription" content="Histórias e curiosidades sobre o universo do Coringa"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+
+	<body>
+		
+		<header>
+			<img id="banner" src="img/image-4.png" alt="imagem do rosto dos três coringas"/>
+		</header>	
+		
+		<nav>	
+			<a class="a-menu" href="index.html"> Home </a>
+			<a class="a-menu" href="index.html#crowbar"> Crowbar </a>
+			<a class="a-menu" href="index.html#goldenage"> Golde Age </a>
+			<a class="a-menu" href="index.html#killingjoke"> Batman: The Killing Joke </a> 
+		</nav>
+		
+		<section id="pag-agendamento">		
+			<h1>Cadastro</h1>
+			<p>Cadastre-se para receber as novidades sobre o Universo DC!</p>
+			<form name="" method="" action="">
+				<label for="nome">Nome:</label>		
+				<input id="nome" type="text" name="Nome" placeholder="Nome Completo" required autofocus/>
+
+				<label for="email">E-mail:</label>	
+				<input id="email" type="Email" name="Email" placeholder="nome@email.com"/>
+
+				<label for="senha">Senha:</label>
+				<input id="senha" type="password" name="senha" placeholder="somente números"/>
+
+				<label for="celular">Celular:</label>
+				<input id="celular" type="tel" name="celular" placeholder="(99) 99999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" />
+
+				<div id="data-hora">
+					<div>
+						<label for="data">Data:</label>
+						<input id="data" type="date" name="data"/>
+					</div>
+					<div>
+						<label for="hora">Hora:</label>
+						<input id="hora" type="time" name="hora"/>
+					</div>
+					<div>
+						<label for="aulas">Notificações:</label>
+						<input id="aulas" type="number" name="aulas" min="1" max="7" step="1"/>
+					</div>
+				</div>
+
+				<label for="nivel">Nível:</label>
+				<select id="nivel" name="nivel">
+					<option>Selecione</option>
+					<option value="iniciante">Iniciante</option>
+					<option value="intermediario">Intermediário</option>
+					<option value="geek">Geek</option>
+				</select>
+					
+
+				<fieldset>
+					<legend>Gênero:</legend>
+					<input id="masc" type="radio" name="genero" value="masculino" /> <label for="masc">Masculino</label>
+					<br>
+					<input id="fem" type="radio" name="genero" value="feminino" /> <label for="fem">Feminino</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Personagens Favoritos:</legend>
+					<input id="1" type="checkbox" name="personagem" value="Superman"/> <label for="1">Superman</label>
+					<br/>
+					<input id="2" type="checkbox" name="personagem" value="Batman"/> <label for="2">Batman</label>
+					<br/>
+					<input id="3" type="checkbox" name="personagem" value="Mulher-Maravilha"/> <label for="3">Mulher-Maravilha</label>
+					<br/>
+					<input id="4" type="checkbox" name="personagem" value="Flash"/> <label for="4">Flash</label>
+					<br/>
+					<input id="5" type="checkbox" name="personagem" value="Outros"/> <label for="5">Outros</label>
+					</fieldset>
+
+				<label for="msg">Descreva seu conhecimento com o mundo DC</label>
+				<textarea id="msg" cols="54" rows="6">					
+				</textarea>
+
+				<div id="botoes">
+					<input type="submit" name="btn-Cadastro" value="CADASTRAR">
+					<input type="reset" name="btn-Cancelar" value="CANCELAR">
+				</div>
+			</form>
+		</section>
+		
+			<footer> <!-- Footer é uma tag para identificar o radapé do site}-->
+				<p>Desenvolvido por <a href="https://instagram.com/rossanoalves" target="_blank">Rossano Alves Lima Júnior</a> - 2020</p>
+			</footer>	
+	</body>
+</html>
