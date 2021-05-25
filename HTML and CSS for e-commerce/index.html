@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Colecionáveis DC</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rossano Alves Lima Júnior"/>
+		<meta name="keywords" content="Joker, Coringa, HQ, DC, Comics, Produtos"/>
+		<meta name="discription" content="Produtos colecionáveis do Coringa"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	
+	<body>
+		<nav>
+			<font face="Arial" size="4">
+			<a class="a-menu" href="#home">Home </a>
+			<a class="a-menu" href="#sobre">Sobre</a>
+			<a class="a-menu" href="#produtos">Produtos</a>
+			<a class="a-menu" href="#encomendas">Encomendas</a>					
+		</nav>
+	
+		<header id="home">
+			<img id="banner" src="img/BANNER.png" alt="banner do site" />
+		</header>
+		
+		<article id="sobre">
+			<h1>Colecionáveis DC</h1>				
+			<p>				
+			Loja criada em 2021 com a participação dos amantes do universo DC no intuito de disponibilizar artigos colecionáveis. Mensalmente havera novos produtos conforme solicitação dos usuários.</p>
+		</article>
+
+		<section id="produtos">
+			
+			<h2>Produtos</h2>
+			<p>
+			Neste mês de fevereiro de 2021 estaremos disponibilizando produtos do Coringa !!!	  </p>
+				
+			<div id="conteiner">
+				<div class="card1">		
+					<img class="img-hq" src="img/caneca_batman_e_coringa_35.jpg"/>
+					<div class="card-conteudo">
+						<h3>Caneca</h3>
+						<p>R$35,00</p>
+					</div>
+				</div>	
+					
+				<div class="card1">		
+					<img class="img-hq" src="img/squeeze_dc_comics_the_joker_60.jpg"/>
+					<div class="card-conteudo">
+						<h3>Squeeze</h3>
+						<p>R$60,00</p>
+					</div>
+				</div>
+
+				<div class="card1">		
+					<img class="img-hq" src="img/capa_de_notebook_coringa_special60.jpg"/>
+					<div class="card-conteudo">
+						<h3>Capa de Notebook</h3>
+						<p>R$60,00</p>
+					</div>
+				</div>
+
+				<div class="card1">		
+					<img class="img-hq" src="img/almofada_coringa_neon55.jpg"/>
+					<div class="card-conteudo">
+						<h3>Almofada</h3>
+						<p>R$55,00</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="encomendas">
+			
+			<h2>Encomendas</h2>		
+
+			<form name="" method="" action="">
+				<label for="nome">Nome:</label><br/>		
+				<input id="nome" type="text" name="Nome" size="65" placeholder="Nome Completo" required/><br/>
+
+				<label for="email">E-mail:</label><br/>		
+				<input id="email" type="Email" name="Email" size="65" placeholder="nome@email.com"/>
+				<br/>
+
+				<label for="produto">Produto:</label>
+				<br/>
+				<select id="produto" name="produto">
+					<option>Selecione</option>
+					<option value="Caneca">Caneca</option>
+					<option value="Squeeze">Squeeze</option>
+					<option value="Capa de Notebook">Capa de Notebook</option>
+					<option value="Almofoda">Almofoda</option>
+				</select><br/>
+				
+				<label for="qnt">Quantidade:</label>
+				<br/>
+				<input id="qnt" type="number" name="qnt" min="1" max="100000000000" step="1" /><br/>
+
+				<fieldset>
+					<legend>Forma de Retirada</legend>
+					<input id="fr" type="radio" name="formaretirada" value="Sedex" /> <label for="fr">Sedex</label>
+					<br/>
+					<input id="fdr" type="radio" name="formaretirada" value="RetirarLocal" /> <label for="fdr">Retirar no Local</label>
+				</fieldset>
+
+				<label for="msg">Sugestão para novos produtos:</label><br/>
+				<textarea id="msg" cols="65" rows="6">
+					
+				</textarea>
+
+				<div id="botoes">
+				<input type="submit" name="btn-Encomendar" value="ENCOMENDAR">
+				<input type="reset" name="btn-Cancelar" value="CANCELAR"><p>
+				</div>
+
+			</form>
+			
+		</section>								
+		
+		<footer>
+			<p align="center">Desenvolvido por <a href="https://instagram.com/rossanoalves" target="_blank">Rossano Alves Lima Júnior</a> - 2020</p>
+		</footer>		
+	</body>
+</html>

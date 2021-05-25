@@ -1,0 +1,198 @@
+/*seltor{propriedade:valor;}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Comic+Neue:ital,wght@1,700&family=Noto+Sans+JP:wght@300;500&display=swap');
+/*Fontes importadas do Google Fonts @import*/
+
+*{margin: 0;} /*O asterisco [*] indica o conjunto completo de uma certa propriedade*/
+/*Padding é uma margem interna ou preenchimento*/ /*Margin é uma margem externa que distância os elementos*/
+
+nav{
+	background-color: black;
+	text-align: right;
+	padding: 9px; /*Preenchimento, epaçamento interno*/
+}
+
+a{
+	font: 1.2rem 'Noto Sans JP', sans-serif;
+	text-decoration: none; /*Retirar decorações, no caso o sublinado*/
+}
+
+.a-menu{
+	margin-right: 13px; /*Margem entre os itens do menu para distanciar*/
+}
+
+.a-menu:link, .a-menu:visited{ /*Configuração de links*/
+	color: white;
+}
+
+.a-menu:hover, .a-menu:active{ /*Configuração de links*/
+	text-shadow: 0 1.4px 2px white;
+}
+
+header{	
+	width: 100%;
+}
+
+#banner{
+	width: 100%;
+	height: 190px;
+	margin-bottom: -5px;
+}
+
+
+img{
+	width: 100%;
+}
+
+h1{
+	font: 2rem 'Noto Sans JP', sans-serif; /*rem tamanho para fonte*/
+	color: #000000;
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+p{
+	font:1.1rem 'Noto Sans JP', sans-serif;
+	color: black;
+	text-align: justify;
+	text-indent: 0px; /*Identação(recuo) no inicio do parágrafo*/
+	line-height: 25px; /*Distanciamento das palavra de cima e de baixo */
+}
+
+article{
+	background-color: #DCDCDC; 
+	width:100%;
+	padding: 20px;
+	box-sizing: border-box; /* alinhamento de bordas internas*/
+}
+
+section{
+	padding: 20px;
+	
+}
+
+h2{
+	font: 1.6rem 'Noto Sans JP', sans-serif; /*rem tamanho para fonte*/
+	color: black;
+	text-align: left;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#conteiner{
+	display: flex; /*Alinhar as divs lado a lado*/
+	margin-top: 5px;	
+}
+
+.card1{
+	background-color: white;
+	margin: 10px;		
+	border-radius: 8px; /*Arredondamento do card*/
+	box-shadow: 0 6px 8px #CCC; /*Sombra do card, colocar o valor da sombra em negativo inverte o lado*/
+	transition: 0.5s; /*tempo de transição do efeito do card1 para o card:hover*/
+}
+
+/*efeito ao passar o mouse dobre o card*/
+.card1:hover{
+box-shadow: 0 12px 16px #CCC
+}
+
+.card-conteudo{
+	display: flex;
+	padding: 15px;	
+}
+
+h3{
+	font: 1.1rem 'Noto Sans JP', sans-serif; /*rem tamanho para fonte*/ 
+	font-weight: bold;	
+}
+
+.card-conteudo p{
+	font:1rem 'Noto Sans JP', sans-serif;
+	flex-grow: 1;/*Aumentou o tamanho do flex do valor, assim foi possível alinhar a direita*/
+	text-align: right;
+}
+
+#encomendas{
+	background-color: #DCDCDC;
+}
+
+#encomendas h2{
+	font: 1.6rem 'Noto Sans JP', sans-serif; /*rem tamanho para fonte*/
+	color: black;
+	text-align: left;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+form{
+	width: 500px;
+	margin: 0 auto; /*Centralizar o formulario*/
+}
+
+input, select, textarea{
+	width: 100%; /*Os inputs irão ocupar 100% da largura do elemento que ele se encontra, no caso o form*/
+	height: 30px; /*Aumentar a alura da caixa de input*/
+	margin-bottom: 10px; /*Distanciar conteúdo de baixo*/
+	padding-left: 5px; /*Espaçamento a esquerda do texto dentro da caixa de input */
+	box-sizing: border-box; /*utilizado para as bordar não extrapolarem a região do input, no caso o form*/
+	border: 1px solid #C4C4C4; /*configuração da borda: espessura, estilo e cor*/
+	font: 1rem 'Noto Sans JP', sans-serif; /*modificar fonte dentro da caixa*/
+	color: black; /*modificar cor da fonte dentro da caixa*/
+}
+
+label, fieldset{
+	font:1rem 'Noto Sans JP', sans-serif
+}
+
+fieldset{
+	border: 1px solid #C4C4C4;
+	margin-bottom: 10px;
+	padding: 7px;
+	background-color: white;
+}
+
+/*formatar somentes os inputs do tipo radio e checkbox*/
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 15px;
+}
+
+textarea{
+	height: 90px;
+}
+
+#botoes{
+	display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin: 15px;
+	background-color: #00BFFF;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px; /*arredondar borda do botão*/
+
+}
+
+input[type="reset"]{
+	background-color: red;
+}
+
+footer{
+	background-color: black;
+	padding: 5px;
+}
+
+footer p,a{
+	text-align: center;
+	color: #FFF;
+	text-align: center;
+}
+
+/*Efeito ao passar o mouse*/
+footer a:hover{
+	text-shadow: 0 1.4px 2px white;
+}
