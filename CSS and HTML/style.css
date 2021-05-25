@@ -1,0 +1,284 @@
+/*seltor{propriedade:valor;}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Comic+Neue:ital,wght@1,700&family=Noto+Sans+JP:wght@300;500&display=swap');
+/*Fontes importadas do Google Fonts @import*/
+
+*{margin: 0;} /*O asterisco [*] indica o conjunto completo de uma certa propriedade*/
+/*Padding é uma margem interna ou preenchimento*/ /*Margin é uma margem externa que distância os elementos*/
+
+body{
+	background-color: rgb(255,255,255);
+}
+
+header{	
+	width: 100%;
+	height: 520px;
+}
+
+#banner{
+	width: 100%;
+	height: 520px;
+}
+
+nav{
+	background-color: #000000;
+	text-align: center;
+	padding: 3px; /*Preenchimento, epaçamento interno*/
+
+}
+
+a{
+	font: 1.2rem 'Noto Sans JP', sans-serif;
+	text-decoration: none; /*Retirar decorações, no caso o sublinado*/
+	
+
+}
+
+.a-menu{
+	margin-right: 40px; /*Margem entre os itens do menu para distanciar*/
+	font-weight: bold; /*Engrossar fonte*/
+}
+
+.a-menu:link, .a-menu:visited{ /*Configuração de links*/
+	color: #FFF;
+}
+
+.a-menu:hover, .a-menu:active{ /*Configuração de links*/
+	color: green;
+}
+
+article{
+	width:100%;
+	background-color: #FFF;
+	padding: 20px;
+	box-sizing: border-box; /* alinhamento de bordas internas*/
+}
+
+h1{
+	font: 4.2rem 'Annie Use Your Telescope', cursive; /*rem tamanho para fonte*/
+	color: #000000;
+	margin-bottom: 3px; /*Distanciamento do conteúdo abaixo*/
+	text-align: center;
+}
+
+p{
+	font:1.2rem 'Noto Sans JP', sans-serif;
+	color: #616161;
+	text-align: justify;
+	text-indent: 0px; /*Identação(recuo) no inicio do parágrafo*/
+	line-height: 25px; /*Distanciamento das palavra de cima e de baixo */
+}
+
+#txt-black{
+	color: #000;
+}
+
+section{
+	padding: 20px; 
+}
+
+h2{
+	font: 2rem 'Noto Sans JP', sans-serif; /*rem tamanho para fonte*/
+	color: #000000;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+/*Seletor de id usa-se (#)*/
+#crowbar{
+	background-color: #000000; 
+}
+
+#crowbar h2{ /*Somente o h2 do crowbar será modificado*/
+	color: #FFF;	
+} 
+
+#crowbar p{ /*Somente o p do crowbar será modificado*/
+	color: #FFF;
+	margin-top: 10px;
+} 
+
+#crowbar ul{
+	list-style-type: circle;
+	padding: 20px 50px;
+}
+
+#crowbar li{
+	color: #FFF;
+	font:1.2rem 'Noto Sans JP', sans-serif
+}
+
+#goldenage {
+	background-color: #EEEEEE;
+}
+
+#goldenage p{
+	margin-top: 10px;
+}
+
+#conteiner{
+	display: flex; /*Alinhar as divs lado a lado*/
+	margin-top: 5px;
+}
+
+.card1{
+	background-color: #FFF;
+	margin: 10px;
+	width: 23%;
+	border-radius: 8px; /*Arredondamento do card*/
+	box-shadow: 0 6px 8px #CCC; /*Sombra do card, colocar o valor da sombra em negativo inverte o lado*/
+	transition: 0.5s; /*tempo de transição do efeito do card1 para o card:hover*/
+}
+/*efeito ao passar o mouse dobre o card*/
+.card1:hover{
+box-shadow: 0 12px 16px #CCC
+}
+
+.card-conteudo{
+	padding: 10px;
+}
+
+.card-conteudo p{
+	font:1rem 'Noto Sans JP', sans-serif;
+	text-indent: 0px; /*Identação(recuo) no inicio do parágrafo*/
+	line-height: 20px; /*Distanciamento das palavra de cima e de baixo */
+}
+
+h3{
+	font: 1rem 'Noto Sans JP', sans-serif; /*rem tamanho para fonte*/
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#goldenage ul{
+	list-style-type: circle;
+	padding: 20px 50px;
+}
+
+#goldenage li{
+	color: #616161;;
+	font:1.2rem 'Noto Sans JP', sans-serif
+/*Seletor de class usa-se (.)*/
+}
+.img-hq{
+	width: 301px;
+	height: 301px;
+}
+
+#killingjoke{
+
+}
+
+#conteiner-KJ{
+	display: flex;/*Alinhar as divs lado a lado*/
+}
+
+.coluna-kill{
+	padding: 10px;
+}
+
+.conteiner-img{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center; /*Alinhar elementos*/
+	align-items: center; /*Alinhar itens dentro dos elementos*/
+}
+
+.conteiner-img p{
+	color: black;
+}
+
+.img-logo{
+	width: 25px;
+	height: 25px;
+	padding: 10px;
+}
+
+video{
+	width: 600px;
+}
+
+footer{
+	background-color: black;
+	padding: 5px;
+}
+
+footer p,a{
+	text-align: center;
+	color: #FFF;
+	text-align: center;
+}
+
+/*Efeito ao passar o mouse*/
+footer a:hover{
+	color: green;
+}
+
+/*Página de Agendamentos*/
+
+#pag-agendamento{
+
+}
+
+#pag-agendamento p{
+	text-align: center;
+	margin-bottom: 15px;
+	color: black;
+}
+
+form{
+	width: 400px;
+	margin: 0 auto; /*Centralizar o formulario*/
+}
+
+input, select, textarea{
+	width: 100%; /*Os inputs irão ocupar 100% da largura do elemento que ele se encontra, no caso o form*/
+	height: 30px; /*Aumentar a alura da caixa de input*/
+	margin-bottom: 10px; /*Distanciar conteúdo fe baixo*/
+	padding-left: 5px; /*Espaçamento a esquerda do texto dentro da caixa de input */
+	box-sizing: border-box; /*utilizado para as bordar não extrapolarem a região do input, no caso o form*/
+	border: 1px solid #C4C4C4; /*configuração da borda: espessura, estilo e cor*/
+	font:0.9rem 'Noto Sans JP', sans-serif; /*modificar fonte dentro da caixa*/
+	color: green; /*modificar cor da fonte dentro da caixa*/
+}
+
+label, fieldset{
+	font:1rem 'Noto Sans JP', sans-serif
+}
+
+fieldset{
+	border: 1px solid #C4C4C4;
+	margin-bottom: 10px;
+	padding: 7px;
+}
+
+#data-hora{
+	display: flex; /*Colocar lado a lado*/
+}
+
+/*formataro somentes os inputs do tipo radio e checkbox*/
+input[type="radio"], input[type="checkbox"]{
+	width: 15px;
+	height: 15px;
+	margin-left: 15px;
+}
+
+textarea{
+	height: 90px;
+}
+
+#botoes{
+	display: flex;
+}
+
+input[type="submit"], input[type="reset"]{
+	margin: 15px;
+	background-color: #8BC34A;
+	color: #FFF;
+	border: 0;
+	border-radius: 5px; /*arredondar borda do botão*/
+
+}
+input[type="reset"]{
+	background-color: #F47E7E;
+}
